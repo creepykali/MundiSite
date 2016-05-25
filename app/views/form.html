@@ -1,0 +1,87 @@
+<div class="container">
+  <h1 class="title"> Quero contratar </h1>
+
+  <div layout="column">
+    <md-content>
+     <form name="clientForm">
+
+      <div layout-gt-sm="row">
+        <md-input-container class="md-block" flex-gt-sm>
+          <label>Nome*</label>
+          <md-icon md-font-icon="material-icons"> 
+           person
+          </md-icon>
+          <input type="text">
+        </md-input-container>
+
+        <md-input-container class="last md-block" flex-gt-sm>
+          <label>Sobrenome*</label>
+          <md-icon md-font-icon="material-icons"> 
+           person
+          </md-icon>
+          <input type="text">
+        </md-input-container>
+      </div>
+         
+      <div layout-gt-sm="row">
+        <md-input-container class="md-block" flex-gt-sm>
+          <label>E-mail*</label>
+          <md-icon md-font-icon="material-icons"> 
+           email
+          </md-icon>
+          <input type="text">
+        </md-input-container>
+
+        <md-input-container class="last md-block" flex-gt-sm>
+          <label>Site (opcional)</label>
+          <md-icon md-font-icon="material-icons"> 
+           computer
+          </md-icon>
+          <input type="text">
+        </md-input-container>
+      </div>
+
+
+      <div layout-gt-sm="row">
+        <md-input-container class="md-block" flex-gt-sm>
+          <label>Nome da loja</label>
+          <md-icon md-font-icon="material-icons"> 
+           store
+          </md-icon>
+          <input type="text">
+        </md-input-container>
+
+        <md-input-container class="last md-block" flex-gt-sm>
+          <label>Número de transações</label>
+          <md-icon md-font-icon="material-icons">
+            shopping_cart
+          </md-icon>
+      
+        <md-select name="numberOfTransactions" id="numberOfTransactions" class="" ng-model="mainCtrl.selectedUser">
+          <md-option ng-value="user.id" ng-repeat="user in mainCtrl.users">{{ user.name }}</md-option>
+        </md-select>
+
+        </md-input-container>
+
+      </div>
+
+      <div layout-gt-sm="row">
+        <md-input-container class="md-block" flex-gt-sm>
+          <label>Mensagem</label>
+          <md-icon md-font-icon="material-icons"> 
+           message
+          </md-icon>
+          <textarea rows="5"></textarea>
+        </md-input-container>
+      </div>
+
+        <md-button class="md-raised md-primary pull-right form-button"> Enviar </md-button>
+
+      </form>
+    </md-content>
+  </div>
+</div>
+
+
+
+

@@ -1,0 +1,269 @@
+/* ==========================================================================
+   Estilos da barra de navegação
+   ========================================================================== */
+
+/* Mobile < 992px */
+
+.navbar {
+    background: #fff;
+    color: #1565c0;
+	font-size: 1.4rem;
+	font-weight: 500 ;
+    padding: 1em 0.5em;
+    z-index: 11;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    border-radius: 0;
+    -webkit-transition: all 0.5s ease-in;
+    transition: all 0.5s  ease-in;
+}
+
+.navbar-nav {
+    margin-top: 8px;
+}
+
+.navbar-header {
+    padding: 10px 0;
+}
+
+.navbar .navbar-brand {
+	margin-right: 0.8em;
+	padding: 0;
+    background: url("../images/logo.png") no-repeat;
+    display: block;
+    width: 122px;
+    height: 34px;
+}
+
+.login {
+    border-left: 1px solid #fff;
+    padding-left: 5px;
+}
+
+.login .material-icons {
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+	background-color: transparent;
+}
+
+.navbar-nav > li {
+    margin-right: 13px
+}
+
+.navbar-nav > li:last-child {
+	margin-right: 0;
+}
+
+.navbar .navbar-nav > li > a {
+    padding: 0 5px 0;
+	font-size: 1.5rem;
+    color: #263238;
+}
+
+.navbar .navbar-nav > li.active > a,
+.navbar .navbar-nav > li:hover > a,
+.navbar.affix .navbar-nav > li.active > a,
+.navbar.affix .navbar-nav > li:hover > a {
+    color: #3d5afe;
+}
+
+.navbar .navbar-nav > li a {
+    position: relative;
+    padding-bottom: 3px;
+    font-weight: 400;
+}
+
+.navbar .navbar-nav > li.active > a:hover {
+	border-bottom: 0;
+}
+
+.nav .material-icons {
+	line-height: 0;
+}
+
+
+/* Affix */
+
+.navbar.affix {
+    width: 100%;
+    position: fixed;
+    background: #fff;
+    color: #1565c0;
+    -webkit-transition: all 0.5s ease-in;
+    transition: all 0.5s  ease-in;
+    box-shadow: 1px 0px 13px #ddd;
+}
+
+.navbar.affix .navbar-brand {
+	background: url("../images/logo.png") no-repeat;
+}
+
+.navbar.affix .navbar-nav > li > a {
+    color: #263238;
+}
+
+.navbar.affix .login .material-icons{
+    color: #3d5afe;
+}
+
+.navbar-toggle {
+    margin: 0;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #00569F;
+}
+
+.navbar-nav > li {
+    padding: 7px 0px 10px;
+}
+
+/* desktop */
+@media screen and (min-width: 992px) { 
+
+    .navbar {
+        background-color: transparent;
+        color: rgb(255, 255, 255);
+        padding: 1.5em;
+    }
+
+    .navbar-header {
+        padding: 0;
+    }
+
+    .navbar .navbar-brand {
+        background: url("../images/mundi.png") no-repeat;
+        margin-right: 1em;
+        margin-left: 0;
+    }
+
+    .navbar .active a {
+        color: rgb(255, 255, 255);
+    }
+
+    .navbar .navbar-nav > li > a,
+    .navbar .navbar-nav > li.active > a, 
+    .navbar .navbar-nav > li:hover > a {
+        color: #ffffff;
+    }
+
+    .navbar.affix .navbar-nav > li > a,
+    .navbar.affix .navbar-nav > li.active > a, 
+    .navbar.affix .navbar-nav > li:hover > a {
+        color: #263238;
+    }
+
+    .navbar-nav > li {
+        padding: 0;
+    }
+
+    /* default state */
+
+    .navbar .navbar-nav > li a:before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+        height: 2px;
+        width: 0;
+        transition: width 0s ease, background .5s ease;
+    }
+
+    .navbar .navbar-nav > li.active a:after
+    {
+        width: 100%;
+        content: '';
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: -4px;
+        height: 2px;
+        background: #ffffff;
+    }
+
+    .navbar .navbar-nav > li a:after {
+        content: '';
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: -4px;
+        height: 2px;
+        width: 0;
+        background: #ffffff;
+        transition: width .5s ease;
+    }
+
+    .navbar .navbar-nav > li a:hover:before {
+        width: 100%;
+        background: #ffffff;
+        transition: width .5s ease;
+    }
+
+    .navbar .navbar-nav > li a:hover:after {
+        width: 100%;
+        background: transparent;
+        transition: all 0s ease;
+    }
+
+    /* affix */
+
+	.navbar.affix-top {
+	    box-shadow: none;
+	}
+
+    .navbar.affix .login {
+        border-left: 1px solid #00569F;
+    }
+
+    .navbar.affix .navbar-nav > li a:before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+        height: 2px;
+        width: 0;
+        transition: width 0s ease, background .5s ease;
+    }
+
+    .navbar.affix  .navbar-nav > li.active a:after
+    {
+        width: 100%;
+        content: '';
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: -4px;
+        height: 2px;
+        background: #1565c0;
+    }
+
+    .navbar.affix .navbar-nav > li a:after {
+        content: '';
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: -4px;
+        height: 2px;
+        width: 0;
+        background: #1565c0;
+        transition: width .5s ease;
+    }
+
+    .navbar.affix .navbar-nav > li a:hover:before {
+        width: 100%;
+        background: #1565c0;
+        transition: width .5s ease;
+    }
+
+    .navbar.affix .navbar-nav > li a:hover:after {
+        width: 100%;
+        background: transparent;
+        transition: all 0s ease;
+    }
+}
