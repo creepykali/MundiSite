@@ -8,6 +8,7 @@
  *
  * Main module of the application.
  */
+
 angular
   .module('mundiSiteApp', [
     'ngAnimate',
@@ -23,8 +24,16 @@ angular
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl as mainCtrl'
+        templateUrl: 'views/main.html'
+      })
+      .when('/solutions', {
+        templateUrl: 'views/solutions.html'
+      })
+      .when('/mundi', {
+        templateUrl: 'views/mundi.html'
+      })
+      .when('/customers', {
+        templateUrl: 'views/customers.html'
       })
       .otherwise({
         redirectTo: '/'

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title></title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
@@ -19,44 +19,15 @@
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/icon?family=Material+Icons">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100' rel='stylesheet' type='text/css'>
   </head>
-  <body ng-app="mundiSiteApp">
+  <body ng-app="mundiSiteApp" ng-controller="MainCtrl as mainCtrl">
     <!--[if lte IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <!-- Navbar -->
-    <nav class="navbar" data-spy="affix" data-offset-top="200" id="nav">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-responsive-collapse" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">
-        </a>
-      </div>
+   <!-- Views -->
+   <div ng-view class="main"></div>
 
-      <div class="collapse navbar-collapse navbar-responsive-collapse">
-        <ul class="nav navbar-nav">
-            <li class="active"><a href="javascript:void(0)">Home</a></li>
-            <li><a href="#">Soluções</a></li>
-            <li><a href="#">A Mundi</a></li>
-            <li><a href="#">Clientes</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-            <li><a href="http://status.mundipagg.com/" target="_blank">Status</a></li>
-            <li><a href="https://mundipagg.zendesk.com/hc/pt-br"  target="_blank">MundiHelpp</a></li>
-            <li><a href="http://blog.mundipagg.com/" target="_blank">Blog</a></li>
-            <li class="login"><a href="https://dashboard.mundipagg.com" target="_blank"> <i class="material-icons">input</i> Login</a></li>
-        </ul>
-      </div>
-    </nav>
-
-    <div class="main" ng-view></div>
-
-    
-
+   
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
        !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
@@ -85,9 +56,12 @@
     <!-- endbower -->
     <!-- endbuild -->
 
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
-        <!-- endbuild -->
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/form.js"></script>
+    <script src="scripts/controllers/header.js"></script>
+    <script src="scripts/controllers/video.js"></script>
+    <!-- endbuild -->
 </body>
 </html>

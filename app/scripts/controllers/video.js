@@ -2,16 +2,14 @@
 
 /**
  * @ngdoc function
- * @name mundiSiteApp.controller:MainCtrl
+ * @name mundiSiteApp.controller:VideoCtrl
  * @description
- * # MainCtrl
+ * # VideoCtrl
  * Controller of the mundiSiteApp
  */
- 
 angular.module('mundiSiteApp')
-  .controller('MainCtrl', [function () {
-  	
+  .controller('VideoCtrl', [function () {
   	var self = this;
-   
 
+  	
   }]);

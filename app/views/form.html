@@ -57,8 +57,8 @@
             shopping_cart
           </md-icon>
       
-        <md-select name="numberOfTransactions" id="numberOfTransactions" class="" ng-model="mainCtrl.selectedUser">
-          <md-option ng-value="user.id" ng-repeat="user in mainCtrl.users">{{ user.name }}</md-option>
+        <md-select name="numberOfTransactions" id="numberOfTransactions" class="" ng-model="formCtrl.selectedUser">
+          <md-option ng-value="user.id" ng-repeat="user in formCtrl.users">{{ user.name }}</md-option>
         </md-select>
 
         </md-input-container>

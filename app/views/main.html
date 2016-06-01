@@ -1,23 +1,28 @@
-<!-- Intro  -->
-<section class="intro full" ng-include="'views/intro.html'"></section>
+<!-- Navbar -->
+<navbar ng-include="'views/header.html'" ng-controller="HeaderCtrl as headerCtrl"></navbar>
 
-<!-- Control -->
-<section class="control" ng-include="'views/control.html'"></section>
+<div class="wrap">
+	<!-- Intro  -->
+	<section class="intro full" ng-include="'views/intro.html'"></section>
 
-<!-- Needs -->
-<section class="needs" ng-include="'views/needs.html'"></section>
+	<!-- Control -->
+	<section class="control" ng-include="'views/control.html'"></section>
 
-<!-- Clients -->
-<section class="clients" ng-include="'views/clients.html'"></section>
+	<!-- Needs -->
+	<section class="needs" ng-include="'views/needs.html'"></section>
 
-<!-- Advantages -->
-<section class="advantages" ng-include="'views/advantages.html'"></section>
+	<!-- Customers -->
+	<section class="customers" ng-include="'views/home-customers.html'"></section>
 
-<!-- Video  -->
-<section class="video-container" ng-include="'views/video.html'"></section>
+	<!-- Advantages -->
+	<section class="advantages" ng-include="'views/advantages.html'"></section>
 
-<!-- Form -->
-<section class="form-container" ng-include="'views/form.html'"></section>
+	<!-- Video  -->
+	<section class="video-container" ng-include="'views/video.html'"></section>
 
-<!-- Footer -->
-<footer ng-include="'views/footer.html'"></footer>
+	<!-- Form -->
+	<section class="form-container" ng-include="'views/form.html'" ng-controller="FormCtrl as formCtrl"></section>
+
+	<!-- Footer -->
+	<footer ng-include="'views/footer.html'"></footer>
+</div>

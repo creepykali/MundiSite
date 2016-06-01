@@ -86,7 +86,18 @@
 }
 
 
-/* Affix */
+/* Affix +  Internas */
+
+.internal-header .navbar {
+    position: relative;
+    width: 100%;
+    display: block;
+    background: #fff;
+    color: #1565c0;
+    -webkit-transition: all 0.5s ease-in;
+    transition: all 0.5s  ease-in;
+    margin-bottom: 0;
+}
 
 .navbar.affix {
     width: 100%;
@@ -98,15 +109,18 @@
     box-shadow: 1px 0px 13px #ddd;
 }
 
-.navbar.affix .navbar-brand {
+.navbar.affix .navbar-brand,
+.internal-header .navbar .navbar-brand {
 	background: url("../images/logo.png") no-repeat;
 }
 
-.navbar.affix .navbar-nav > li > a {
+.navbar.affix .navbar-nav > li > a,
+.internal-header .navbar .navbar-nav > li > a{
     color: #263238;
 }
 
-.navbar.affix .login .material-icons{
+.navbar.affix .login .material-icons,
+.internal-header .navbar .login .material-icons {
     color: #3d5afe;
 }
 
@@ -114,7 +128,8 @@
     margin: 0;
 }
 
-.navbar-toggle .icon-bar {
+.navbar-toggle .icon-bar,
+.internal-header .navbar-toggle .icon-bar {
     background-color: #00569F;
 }
 
@@ -122,7 +137,9 @@
     padding: 7px 0px 10px;
 }
 
-/* desktop */
+
+/* Desktop */
+
 @media screen and (min-width: 992px) { 
 
     .navbar {
@@ -161,7 +178,7 @@
         padding: 0;
     }
 
-    /* default state */
+    /* Default state */
 
     .navbar .navbar-nav > li a:before {
         content: '';
@@ -210,17 +227,24 @@
         transition: all 0s ease;
     }
 
-    /* affix */
+    /* Affix + Internas */
+    .internal-header .navbar .navbar-nav > li > a, 
+    .internal-header .navbar .navbar-nav > li.active > a,
+    {
+        color: #263238;
+    }
 
 	.navbar.affix-top {
 	    box-shadow: none;
 	}
 
-    .navbar.affix .login {
+    .navbar.affix .login,
+    .internal-header .navbar .login {
         border-left: 1px solid #00569F;
     }
 
-    .navbar.affix .navbar-nav > li a:before {
+    .navbar.affix .navbar-nav > li a:before,
+    .internal-header .navbar .navbar-nav > li a:before {
         content: '';
         display: block;
         position: absolute;
@@ -231,8 +255,8 @@
         transition: width 0s ease, background .5s ease;
     }
 
-    .navbar.affix  .navbar-nav > li.active a:after
-    {
+    .navbar.affix .navbar-nav > li.active a:after,
+    .internal-header .navbar .navbar-nav > li.active a:after {
         width: 100%;
         content: '';
         display: block;
@@ -243,7 +267,8 @@
         background: #1565c0;
     }
 
-    .navbar.affix .navbar-nav > li a:after {
+    .navbar.affix .navbar-nav > li a:after,
+    .internal-header .navbar .navbar-nav > li a:after {
         content: '';
         display: block;
         position: absolute;
@@ -255,15 +280,21 @@
         transition: width .5s ease;
     }
 
-    .navbar.affix .navbar-nav > li a:hover:before {
+    .navbar.affix .navbar-nav > li a:hover:before,
+    .internal-header .navbar .navbar-nav > li a:hover:before {
         width: 100%;
         background: #1565c0;
         transition: width .5s ease;
     }
 
-    .navbar.affix .navbar-nav > li a:hover:after {
+    .navbar.affix .navbar-nav > li a:hover:after,
+    .internal-header .navbar .navbar-nav > li a:hover:after{
         width: 100%;
         background: transparent;
         transition: all 0s ease;
     }
 }
+
+
+
+
