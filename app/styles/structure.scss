@@ -139,8 +139,7 @@ img {
 .intro {
 	background: url("../images/bg1.png") no-repeat;
 	background-color: #01579b;
-	// background-position: 0% 100%;
-	// overflow: hidden;
+	overflow: hidden;
 	background-size: cover;
 }
 
@@ -152,6 +151,7 @@ img {
     top: 0;
     background-position: 50% 50%;
     z-index: 9;
+    background-size: 120%;
 }
 
 .mundi,
@@ -188,10 +188,22 @@ img {
 	.intro .title {
 	    font-size: 4em;
 	    line-height: 1em;
+        width: 76%;
+    	margin: 20px auto;
 	}
 	.intro .sub {
 		font-size: 1.8em;
 	} 
+
+	.intro-animation {
+	    background-size: 75%;
+	}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1350px){ 
+	.intro-animation {
+	    background-size: 88%;
+	}
 }
 
 /* Control */
@@ -785,9 +797,10 @@ md-input-container.md-input-focused .md-input
     top: 0;
     width: 100%;
     height: 100%;
-	background-image: url('../images/mapa-site.svg');
-	background-repeat:  no-repeat;
-    background-position: 40% 70%;
+    top: -162%;
+	// background-image: url('../images/mapa-site.svg');
+	// background-repeat:  no-repeat;
+ 	// background-position: 40% 70%;
     z-index: 8;
     background-size: 90%;
 }

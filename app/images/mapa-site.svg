@@ -3,13 +3,30 @@
 <svg version="1.0" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 928 952.6" style="enable-background:new 0 0 928 952.6;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#131313;}
-	.st1{fill:#00B0FF;}
-	.st2{fill:none;}
-	.st3{fill:#2962FF;}
-	.st4{opacity:0.5;}
-	.st5{fill:#FFFFFF;}
-	.st6{enable-background:new    ;}
+	.st0 {
+		fill:#131313;
+	}
+	.st1 {
+		fill:#00B0FF;
+	}
+	.st2 {
+		fill:none;
+	}
+	.st3 {
+		fill:#2962FF;
+	}
+	.st4 {
+		opacity:0.5;
+	}
+	.st4:hover{
+		opacity: 1;
+	}
+	.st5 {
+		fill:#FFFFFF;
+	}
+	.st6 {
+		enable-background:new;
+	}
 </style>
 <g>
 	<polygon class="st0" points="601.5,800.6 601.7,800.6 601.7,800.5 601.5,800.5 	"/>
@@ -2013,19 +2030,24 @@
 		658.2,387.2 658.7,387 659,387.1 660.2,386.6 660.8,386.6 661.4,385.9 661.6,385.8 661.7,385.5 662.4,384.9 663,384.8 663.4,384.4 
 		666.2,382.8 666.2,382.7 666,382 666.2,381.4 666.8,380.7 668.4,380.4 	"/>
 </g>
-<g class="st4">
+<g class="st4 mapa-sp">
 	<g>
+		<a xlink:href="https://www.google.com.br/maps/place/Av.+Brg.+Faria+Lima,+1811+-+Jardim+Paulistano,+S%C3%A3o+Paulo+-+SP,+01452-001/@-23.5730242,-46.6911271,17z/data=!3m1!4b1!4m5!3m4!1s0x94ce577338736def:0xecabc48b368c2f5b!8m2!3d-23.5730291!4d-46.6889384" target="_blank">
 		<path class="st5" d="M649.4,691c-5.8,0-10.4,4.7-10.4,10.4s4.7,10.4,10.4,10.4s10.4-4.7,10.4-10.4S655.1,691,649.4,691z
 			 M649.4,708.1c-3.7,0-6.7-3-6.7-6.7s3-6.7,6.7-6.7s6.7,3,6.7,6.7S653.1,708.1,649.4,708.1z M649.6,698.5c-1.8,0-3.2,1.4-3.2,3.2
 			s1.4,3.2,3.2,3.2s3.2-1.4,3.2-3.2S651.4,698.5,649.6,698.5z"/>
+		</a>
 	</g>
 </g>
-<g class="st4">
+<g class="st4 mapa-rj">
 	<g>
+		<a xlink:href="https://www.google.com.br/maps/place/Av.+Gen.+Justo,+375+-+Centro,+Rio+de+Janeiro+-+RJ,+20021-130/@-22.9072817,-43.1709332,17z/data=!3m1!4b1!4m5!3m4!1s0x9981e721f70f99:0x353d209da598ffd!8m2!3d-22.9072867!4d-43.1687445" target="_blank">
 		<path class="st5" d="M723.2,674c-5.8,0-10.4,4.7-10.4,10.4s4.7,10.4,10.4,10.4s10.4-4.7,10.4-10.4S728.9,674,723.2,674z
 			 M723.2,691.1c-3.7,0-6.7-3-6.7-6.7s3-6.7,6.7-6.7s6.7,3,6.7,6.7S726.9,691.1,723.2,691.1z M723.5,681.5c-1.8,0-3.2,1.4-3.2,3.2
-			s1.4,3.2,3.2,3.2s3.2-1.4,3.2-3.2S725.2,681.5,723.5,681.5z"/>
+			s1.4,3.2,3.2,3.2s3.2-1.4,3.2-3.2S725.2,681.5,723.5,681.5z"/>	
+		</a>
 	</g>
+
 </g>
 <rect x="688.3" y="663.1" class="st2" width="69.8" height="6.7"/>
 <g class="st6">
